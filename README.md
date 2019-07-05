@@ -35,6 +35,7 @@ Tudo depois de um ";" é tratado como comentário e ignorado pelo simulador.
 Para iniciar um novo bloco a sintaxe é: bloco [identificador de bloco] [estado inicial]
 
 Para finalizar um bloco a sintaxe é: fim
+
 Para chamar um bloco a sintaxe é: [estado atual] [identificador de bloco] [estado de retorno]
 
 Os estados dentro de um bloco são independentes e não conflitam com estados de outros blocos, isso define uma regra de escopo para os estados. A execução do bloco vai iniciar no estado inicial fornecido na declaração. O identificador “retorne” é utilizado para a saída do bloco chamado, devolvendo o execução para o bloco chamador, no estado de retorno fornecido na chamada.
@@ -45,7 +46,9 @@ A execução do programa sempre inicia no bloco especial de nome “main”.
 
 Para copiar um símbolo da primeira para a segunda fita: [estado atual] copiar [novo estado]
 
-Para copiar um símbolo da segunda para a primeira fita: [estado atual] colar [novo estado>]
+Para copiar um símbolo da segunda para a primeira fita: [estado atual] colar [novo estado]
+
+Para gravar um símbolo qualquer na segunda fita: [estado_atual] gravar [simbolo] [novo_estado]
 
 Caso a linha do programa fonte contenha uma tupla com [símbolo atual] envolto entre colchetes, isso denota que a transição será determinada por (estado, símbolo na segunda fita): [estado atual] [[símbolo atual]] -- [novo símbolo] [movimento] [novo estado].
 Note, entretanto, que a segunda fita é apenas lida para determinar qual transição executar, o [novo símbolo] continuará sendo escrito na primeira fita como de regra.

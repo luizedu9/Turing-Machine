@@ -51,6 +51,7 @@ Para copiar um símbolo da segunda para a primeira fita: [estado atual] colar [n
 Para gravar um símbolo qualquer na segunda fita: [estado_atual] gravar [simbolo] [novo_estado]
 
 Caso a linha do programa fonte contenha uma tupla com [símbolo atual] envolto entre colchetes, isso denota que a transição será determinada por (estado, símbolo na segunda fita): [estado atual] [[símbolo atual]] -- [novo símbolo] [movimento] [novo estado].
+
 Note, entretanto, que a segunda fita é apenas lida para determinar qual transição executar, o [novo símbolo] continuará sendo escrito na primeira fita como de regra.
 
 # Execução:
@@ -73,3 +74,15 @@ python3 simulaMT.py -v calculadora.mt
 python3 simulaMT.py -r calculadora.mt
 
 python3 simulaMT.py -s 5 calculadora.mt
+
+# Calculadora
+
+Em adição a MT, também foi desenvolvido uma calculadora que possui adição, subtração e multiplicação utilizando esta maquina. 
+
+Exemplo para uso da calculadora (Não deve se ter espaço entre os caracteres):
+
+5+5=
+
+5x5=
+
+5-5=

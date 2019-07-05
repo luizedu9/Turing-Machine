@@ -17,7 +17,7 @@ Cada linha do programa fonte contém uma tupla na forma:
 
 [estado atual] [símbolo atual] -- [novo símbolo] [movimento] [novo estado].
 
-Para denotar <estado atual> ou <novo estado> pode utilizar um inteiro de até 4 dígitos. Em <novo estado> também pode se utilizar os identificadores "retorne", para sair do bloco atual, "aceite" e "rejeite" para parar a maquina em um estado final ou não-final.
+Para denotar [estado atual] ou [novo estado] pode deve se utilizar um inteiro de até 4 dígitos. Em [novo estado] também pode se utilizar os identificadores "retorne", para sair do bloco atual, "aceite" e "rejeite" para parar a maquina em um estado final ou não-final.
   
 Para denotar o <símbolo atual> ou <novo símbolo> pode usar qualquer caractere. Usa "_" para representar o branco (espaço).
 

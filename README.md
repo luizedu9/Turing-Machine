@@ -10,7 +10,7 @@ Autores: Luís Fernando da Silva Corrêa, Luiz Eduardo Pereira.
 O trabalho consistiu em desenvolver um simulador para a Máquina de Turing. A sintaxe dos comandos da MT foi inspirada no formato adotado no simulador disponível em http://morphett.info/turing/turing.html, acrescentada de alterações para permitir a programação de procedimentos e a passagen de parâmetros. As mudanças em questão não alteram significativamente as características da MT, mas facilitam muito sua programação permitindo o uso de comandos para declaração e chamada de procedimentos, incluindo a passagem de um parâmetro que será implementada numa segunda fita de uso restrito para esse fim. O programa sempre vai simular a MT de modo determinístico.
 
 # Funcionamento:
-Existem 4 tipos de comandos: comandos básicos, comandos para criação de bloco, comando para chamada de bloco, e comandos para copiar e colar (utilizando a segunda fita).
+Existem 4 tipos de comandos: comandos básicos, comandos para criação de bloco, comando para chamada de bloco, e comandos para utilizar a segunda fita.
 
 ## Sintaxe dos comandos básicos:
 Cada linha do programa fonte contém uma tupla na forma: 

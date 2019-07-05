@@ -14,10 +14,15 @@ Existem 4 tipos de comandos: comandos básicos, comandos para criação de bloco
 
 Sintaxe dos comandos básicos:
 Cada linha do programa fonte contém uma tupla na forma: 
+
 [estado atual] [símbolo atual] -- [novo símbolo] [movimento] [novo estado].
+
 Para denotar <estado atual> ou <novo estado> pode utilizar um inteiro de até 4 dígitos. Em <novo estado> também pode se utilizar os identificadores "retorne", para sair do bloco atual, "aceite" e "rejeite" para parar a maquina em um estado final ou não-final.
+  
 Para denotar o <símbolo atual> ou <novo símbolo> pode usar qualquer caractere. Usa "_" para representar o branco (espaço) ou "*" para representar o simbolo coringa.
+
 O <movimento> denota a ação do cabeçote na fita: "e" denota movimento para a esquerda, "d" denota movimento para a direita, "i" denota ausência de movimento.
+  
 Tudo depois de um ";" é tratado como comentário e ignorado pelo simulador.
 
 # Execução:

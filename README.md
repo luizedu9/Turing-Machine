@@ -19,15 +19,15 @@ Cada linha do programa fonte contém uma tupla na forma:
 
 Para denotar [estado atual] ou [novo estado] pode deve se utilizar um inteiro de até 4 dígitos. Em [novo estado] também pode se utilizar os identificadores "retorne", para sair do bloco atual, "aceite" e "rejeite" para parar a maquina em um estado final ou não-final.
   
-Para denotar o <símbolo atual> ou <novo símbolo> pode usar qualquer caractere. Usa "_" para representar o branco (espaço).
+Para denotar o [símbolo atual] ou [novo símbolo] pode usar qualquer caractere. Usa "_" para representar o branco (espaço).
 
-O <movimento> denota a ação do cabeçote na fita: "e" denota movimento para a esquerda, "d" denota movimento para a direita, "i" denota ausência de movimento.
+O [movimento] denota a ação do cabeçote na fita: "e" denota movimento para a esquerda, "d" denota movimento para a direita, "i" denota ausência de movimento.
   
 Tudo depois de um ";" é tratado como comentário e ignorado pelo simulador.
 
-"*" pode ser usado como coringa em <símbolo atual> para denotar qualquer caractere.
+"*" pode ser usado como coringa em [símbolo atual] para denotar qualquer caractere.
 
-"*" pode ser usado como coringa em <novo símbolo> para significar ausência de mudança.
+"*" pode ser usado como coringa em [novo símbolo] para significar ausência de mudança.
 
 "!" pode ser usado no final da linha para criar um breakpoint. Durante a execução do programa, a máquina vai pausar automaticamente depois de computar uma linha com breakpoint e reabrir o prompt para aguardar nova opção.
 
